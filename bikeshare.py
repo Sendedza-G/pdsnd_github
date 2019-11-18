@@ -25,13 +25,13 @@ def city_input():
     city = input('Please choose the city you want to explore from listed above : ')
     city = city.lower()
     while True:     # for handling the unexpected input by user
-            if city == '1' or city == 'chicago':
+            if city == '1' or city == 'chicago' or city == 'c':
                 print("\nChicago City! Okay Let's see what Chicago has for you\n")
                 return 'chicago'
-            if city == '2' or city == 'new york':
+            if city == '2' or city == 'new york' or city == 'n':
                 print("\nNew York City! Okay let's see what New York City has for you\n")
                 return 'new york city'
-            elif city == '3' or city == 'washington':
+            elif city == '3' or city == 'washington' or city == 'w':
                 print("\nWashington! Okay let's see what Washington has for you\n")
                 return 'washington'
             # error handled by implementing 'else' and provided another option to input data
