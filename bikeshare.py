@@ -15,13 +15,11 @@ def city_input():
     asking the user with the city he/she wants to analyze
     '''
     print('Hello!Let\'s explore some US bikeshare data!')
-    print(' ')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     print('Enter the city you want to analyze the data for:')
     print('1. Chicago')
     print('2. New York')
     print('3. Washington')
-    print(' ')
     city = input('Please choose the city you want to explore from listed above : ')
     city = city.lower()
     while True:     # for handling the unexpected input by user
@@ -97,7 +95,7 @@ def month_day_info(df, day_m):     # Asks the user for a month and a day of mont
                     return month_day
             except ValueError:
                 print("That's not a number value")
-    else:
+    #else:
         return 'none'
 
 def day_info(d):       # Asks the user for a day and returns the specified day
