@@ -97,7 +97,7 @@ def month_day_info(df, day_m):     # Asks the user for a month and a day of mont
                     return month_day
             except ValueError:
                 print("That's not a number value")
-    else:
+    #else:
         return 'none'
 
 def day_info(d):       # Asks the user for a day and returns the specified day
